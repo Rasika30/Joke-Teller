@@ -24,7 +24,7 @@ function textToSpeech(jokeString) {
 
 async function getJokes() {
     let joke = '';
-    const apiUrl = 'https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Dark,Pun,Spooky,Christmas?blacklistFlags=nsfw,religious';
+    const apiUrl = 'https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Dark,Pun,Spooky,Christmas?blacklistFlags=nsfw,racist,sexist,religious';
     try {
         const response = await fetch(apiUrl);
         const data = await response.json();
